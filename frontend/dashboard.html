@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daybook — Your tasks</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dashboard-body">
+  <div class="dashboard-wrap">
+    <header class="dashboard-header">
+      <div>
+        <p class="eyebrow">Welcome back</p>
+        <h1 id="user-name" class="wordmark">there</h1>
+      </div>
+      <div class="header-right">
+        <div class="progress" aria-hidden="true">
+          <svg width="60" height="60" viewBox="0 0 64 64">
+            <circle class="progress-track" cx="32" cy="32" r="26" />
+            <circle id="progress-ring-fill" class="progress-fill" cx="32" cy="32" r="26" />
+          </svg>
+          <span id="progress-label" class="progress-label">0/0</span>
+        </div>
+        <button id="logout-btn" class="btn-ghost" type="button">Log out</button>
+      </div>
+    </header>
+
+    <form id="add-task-form" class="add-form">
+      <input
+        type="text"
+        id="task-title-input"
+        placeholder="What do you need to do?"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" class="btn-primary">Add</button>
+    </form>
+
+    <p id="error-box" class="error-box" role="alert"></p>
+
+    <ul id="task-list" class="task-list"></ul>
+    <p id="empty-state" class="empty-state">Loading your tasks…</p>
+  </div>
+
+  <script src="js/api.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

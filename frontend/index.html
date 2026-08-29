@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daybook — Log in</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body">
+  <main class="auth-card">
+    <p class="eyebrow">Daybook</p>
+    <h1 class="wordmark">Welcome back</h1>
+    <p class="auth-subtitle">Your day, one line at a time.</p>
+
+    <form id="login-form" class="auth-form" novalidate>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required autocomplete="email" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required autocomplete="current-password" />
+
+      <p id="error-box" class="error-box" role="alert"></p>
+
+      <button type="submit" id="submit-btn" class="btn-primary btn-block">Log in</button>
+    </form>
+
+    <p class="auth-switch">New here? <a href="register.html">Create an account</a></p>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daybook — Create account</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="auth-body">
+  <main class="auth-card">
+    <p class="eyebrow">Daybook</p>
+    <h1 class="wordmark">Create your account</h1>
+    <p class="auth-subtitle">Takes about ten seconds.</p>
+
+    <form id="register-form" class="auth-form" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required autocomplete="name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required autocomplete="email" />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required minlength="6" autocomplete="new-password" />
+
+      <label for="confirm-password">Confirm password</label>
+      <input
+        type="password"
+        id="confirm-password"
+        name="confirm-password"
+        required
+        minlength="6"
+        autocomplete="new-password"
+      />
+
+      <p id="error-box" class="error-box" role="alert"></p>
+
+      <button type="submit" id="submit-btn" class="btn-primary btn-block">Create account</button>
+    </form>
+
+    <p class="auth-switch">Already have an account? <a href="index.html">Log in</a></p>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>
