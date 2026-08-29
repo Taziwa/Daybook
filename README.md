@@ -12,7 +12,7 @@ to-do list that's saved in a real database.
 
 ## Stack
 
-| Layer | Technology | Free host |
+| Layer | Technology | Host |
 |---|---|---|
 | Frontend | HTML, CSS, vanilla JavaScript | Netlify |
 | Backend | Node.js, Express | Render |
@@ -21,6 +21,5 @@ to-do list that's saved in a real database.
 
 
 ## Link:
-
 https://daybook12.netlify.app/
 
