@@ -5,7 +5,7 @@
 const API_BASE_URL =
   window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
     ? 'http://localhost:5000/api'
-    : 'https://YOUR-RENDER-APP-NAME.onrender.com/api';
+    : 'https://daybook-7ue6.onrender.com/api';
 
 const TOKEN_KEY = 'daybook_token';
 const USER_KEY = 'daybook_user';
